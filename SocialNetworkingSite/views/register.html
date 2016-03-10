@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Single page web app using Angularjs</title>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link href="css/register.css" rel="stylesheet">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div>
+			<div>
+				<nav id="navMenu"></nav>
+			</div>
+			<br/>
+			  <div class="container">
+			      <form class="form-register" method="post" action="/registerUser">
+			        <h2 class="form-register-heading">Please register</h2>
+			        <label for="name" class="sr-only">Name</label>
+			        <input type="name" name="name" class="form-control" placeholder="Name" required autofocus>
+			        <label for="email" class="sr-only">Email address</label>
+			        <input type="email" name="email" class="form-control" placeholder="Email address" required>
+			        <label for="age" class="sr-only">Age</label>
+			        <input type="age" name="age" class="form-control" placeholder="Age" required>
+			        <label for="inputPassword" class="sr-only">Password</label>
+			        <input type="password" name="password" class="form-control" placeholder="Password" required>
+			        <br/>
+			        <input class="btn btn-lg btn-primary btn-block" type="submit" value = "Submit">
+			      </form>
+    		</div> <!-- /container -->
+		</div>
+	</body>
+
+	<!-- All the scripts -->
+	<script src="javascripts/navbar.js"></script>
+
+</html>
